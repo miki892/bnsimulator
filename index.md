@@ -1,7 +1,7 @@
 #Navigation
-- [Intro](/Intro/)
-- [Examples](/Examples/)
-- [Credits](/Credits/)
+- [Intro](/page2/)
+- [Examples](Examples)
+- [Credits](Credits)
 
 
 Curabitur egestas vel elit id efficitur. Pellentesque at ultricies quam. Aliquam egestas, mi vel auctor convallis, purus nisl mattis nulla, ac malesuada tellus lorem ut felis. Vivamus sagittis felis id efficitur commodo. Donec porta, ligula quis bibendum ullamcorper, tortor enim lobortis elit, eu laoreet neque sem sit amet ex. Phasellus at justo orci. Vestibulum ac metus a risus elementum maximus quis at est.
