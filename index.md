@@ -1,5 +1,5 @@
 #Navigation
-- [Intro](/bnsimulator/page2/)
+- [Intro](/bnsimulator/page2)
 - [Examples](#intro)
 - [Credits](#credits)
 
