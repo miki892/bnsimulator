@@ -14,10 +14,16 @@ The _bnsimulator_ is a simulator software written in Java that allows to simulat
 
 # Examples
 
-1. Curabitur egestas 
+1. Simple search of attractors of a RBN with 20 nodes following a synchronous updating scheme: 
+```java
+BooleanNetwork<MyBitSet, Boolean> bn = new ClassicRBN(20, 3, 0.79);
+SynchronousDynamics<MyBitSet> dynamics= new SynchronousDynamicsImplReverse(bn);		//Xn, ..., X1, X0
+SampleGenerator<MyBitSet> generator = new CompleteEnumerationBitSet(bn.getNodesNumber());
+AttractorsFinder<MyBitSet> finder = new AttractorsFinder<MyBitSet>(dynamics, generator, MyBitSet.MyBitSetComparator);
+List<CyclicAttractor<MyBitSet>> attractors = finder.run();
+```
 2. bla balskjashfa
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae justo at lorem rutrum malesuada ut ut odio. Sed pharetra, ligula quis convallis hendrerit, augue felis scelerisque turpis, ut iaculis ligula odio non erat. Nam at justo efficitur, aliquam sapien nec, luctus ex. Morbi commodo sapien lorem, at maximus neque congue in. Duis eget finibus dolor, eget posuere nulla. Duis a est tincidunt, varius elit a, laoreet ante. Etiam mi ligula, condimentum nec nulla a, venenatis interdum nibh. Aenean rutrum ornare lectus, sed ornare neque facilisis sed. Cras placerat odio non lectus ultricies vulputate. Nam nisi leo, congue eget cursus sit amet, maximus ac urna. Pellentesque nisi tellus, cursus ut leo sit amet, porta volutpat neque. Aenean a dolor sed libero gravida ultrices auctor non justo. Quisque ac dolor non justo volutpat pretium sit amet a justo. Donec feugiat ornare enim ut vulputate. Cras sed leo a magna volutpat varius eget et nulla.
 
 # Credits
 
